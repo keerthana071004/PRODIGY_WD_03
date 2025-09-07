@@ -1,0 +1,172 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Title */
+h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Mode Selector */
+.mode-selection {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.mode-selection label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+select {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Player Name Inputs */
+.player-inputs {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.player-inputs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-inputs label {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.player-inputs input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Game Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+/* Grid Setup */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 20vmin);
+  grid-template-rows: repeat(3, 20vmin);
+  gap: 2vmin;
+}
+
+/* Game Boxes */
+.box {
+  background: radial-gradient(circle, #ffffff 0%, #f0f0f0 100%);
+  border: 3px solid #fff;
+  border-radius: 10px;
+  font-size: 4rem;
+  color: #ff3c3c;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #ffeaa7;
+  transform: scale(1.05);
+}
+
+/* Winner Message */
+.Win-Msg {
+  margin: 2rem 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Win-Msg.show {
+  display: flex;
+}
+
+.msg {
+  font-size: 2rem;
+  background-color: #fff;
+  color: #222;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  animation: popIn 0.6s ease;
+}
+
+/* Reset Button */
+.reset {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  background: linear-gradient(to right, #ff4b5c, #ff6b81);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reset:hover {
+  background: linear-gradient(to right, #ff6b81, #ff4b5c);
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.player-inputs > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
