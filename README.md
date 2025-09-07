@@ -31,7 +31,7 @@ Ideal for beginners who want to:
 To run the game locally:
 1. Clone the repo  
   
-   `git clone` https://github.com/SatChittAnand/TicTacToe.git
+   `git clone` https://github.com/keerthana071004/PRODIGY_WD_03
   
 2. Navigate to the project directory  
    
